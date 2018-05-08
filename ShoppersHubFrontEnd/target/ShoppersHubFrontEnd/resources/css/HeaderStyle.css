@@ -1,0 +1,67 @@
+@charset "ISO-8859-1";
+
+ .header .navbar-brand{ 
+  background: url("../images/shoppershublogo.png") center / contain no-repeat;
+   width: 250px; 
+} 
+
+.header .nav >li >a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  font-family: arial;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.navbar-header .navbar-toggle:hover
+{
+	background-color: #0b387c;
+}
+
+.navbar-header .navbar-toggle:active
+{
+	background-color: #0b387c;
+}
+
+/* .header .nav >li >a:before
+{
+	content: '';
+	width: 0px;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	top: 70%;
+	left: 10;
+	transition: 0.5s;
+}
+
+.header .nav >li:hover >a:before
+{
+	width: 35%;
+	transform: translateX(100%);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
