@@ -89,12 +89,19 @@ public class UserDAOImpl implements UserDAO
 		return sessionFactory.getCurrentSession().createQuery("from User").list();
 	}
 
+	@SuppressWarnings("deprecation")
 	public User validate(String emailID, String password) 
 	{
 		// select * from User where emailID = ? and password = ?
 		return (User) sessionFactory.getCurrentSession().createCriteria(User.class)
 		.add(Restrictions.eq("emailID", emailID))
 		.add(Restrictions.eq("password", password)).uniqueResult();
+	}
+
+	public List<User> list(char role) 
+	{
+		return sessionFactory.getCurrentSession().createCriteria(User.class)
+				.add(Restrictions.eq("role", role)).list();
 	}
 
 }

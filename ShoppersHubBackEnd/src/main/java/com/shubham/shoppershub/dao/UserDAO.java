@@ -27,6 +27,10 @@ public interface UserDAO
 	//5. get all records
 	public List<User> list();
 	
+	
+	public List<User> list(char role);
+	
+	
 	//6. validate
 	//At present we are not using spring security
 	//When we use spring security, we will remove this method.

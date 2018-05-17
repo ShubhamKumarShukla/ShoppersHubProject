@@ -8,13 +8,20 @@
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 </head>
 <body>
-<jsp:include page="Header.jsp"></jsp:include>
- <jsp:include page="carousel2.jsp"></jsp:include> 
+ <jsp:include page="LoginHeader.jsp"></jsp:include> 
+<%--  <jsp:include page="carousel2.jsp"></jsp:include>  --%>
+<%-- <jsp:include page="Carousel.jsp"></jsp:include>  --%>
+
 	 <div class="bodybackground">
 		<c:if test="${isUserClickedLogin==true}">
 			<jsp:include page="LoginForm.jsp"></jsp:include>
 		</c:if>
+		${msg}
+		<c:if test="${isAdmin==true}">
+			<jsp:include page="admin/admin.jsp"></jsp:include>
+		</c:if>
 		
+
 	<%--	<c:if test="${isUserClickedRegister==true}">
 			<jsp:include page="register.jsp"></jsp:include>
 		</c:if> --%>

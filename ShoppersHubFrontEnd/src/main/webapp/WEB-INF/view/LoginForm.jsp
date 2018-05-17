@@ -13,27 +13,29 @@
 	</head>
 <body>
 	<div class="container-fluid">
-		<div class="row">
+		 <div class="row">
 			<div class="col-md-4 col-sm-4 col-xs-12"></div>
-			<div class="col-md-4 col-sm-4 col-xs-12">
+			<div class="col-md-4 col-sm-4 col-xs-12"> 
 				<!-- form start -->
-				<form class="form-container" action="validate" method="post">
+				<form action="validate" method="post" class="form-container">
 					<h2>LOGIN</h2>
 					<hr class="colorgraph"><br>
 					<div class="form-group">
-						<label for="Email">Email</label> 
-						<input type="email" class="form-control" id="Email" placeholder="Email">
+						<label for="mail">Email</label> 
+						<input type="email" class="form-control" name="emailID" 
+						       id="mail" placeholder="Email">
 					</div>
 					<div class="form-group">
-						<label for="Password">Password</label>
-						<input type="password" class="form-control" id="Password" placeholder="Password">
+						<label for="pass">Password</label>
+						<input type="password" class="form-control" name="password" 
+							   id="pass" placeholder="Password">
 					</div>
 					<button type="submit" class="btn btn-primary btn-block">Submit</button>
 				</form>
 				<!-- form end -->
-			</div>
+			 </div>
 			<div class="col-md-4 col-sm-4 col-xs-12"></div>
-		</div>
+		</div> 
 	</div>
 </body>
 </html>

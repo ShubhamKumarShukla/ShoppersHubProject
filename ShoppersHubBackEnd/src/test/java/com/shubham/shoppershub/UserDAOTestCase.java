@@ -38,11 +38,12 @@ public class UserDAOTestCase
 	@Test
 	public void saveUserTestCase()
 	{
-		user.setEmailID("asd@gmail.com");
-		user.setName("ASD FGH");
-		user.setPassword("asd@123");
-		user.setRole('C');
-		user.setMobile("2020202020");
+		user.setEmailID("Phil@gmail.com");
+		user.setName("Phil Coulson");
+		user.setPassword("phil@123");
+		user.setRole('S');
+		user.setMobile("1111111111");
+		user.setAddress("Helicarrier");
 		
 		boolean result = userDAO.save(user);
 		Assert.assertEquals("Save user", true, result);
